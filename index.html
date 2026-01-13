@@ -5,98 +5,11 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Boldify</title>
-	<meta name="description" content="Development of mobile applications and software solutions." />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600&display=swap" rel="stylesheet">
-	<style>
-		* {
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
-
-		body {
-			font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
-			background: #f5f5f7;
-			color: #1d1d1f;
-			line-height: 1.5;
-			font-size: 19px;
-		}
-
-		.container {
-			max-width: 980px;
-			margin: 0 auto;
-			padding: 0 22px;
-		}
-
-		header {
-			padding: 120px 0 80px;
-			text-align: center;
-		}
-
-		h1 {
-			font-size: 56px;
-			font-weight: 600;
-			letter-spacing: -0.5px;
-			margin-bottom: 12px;
-		}
-
-		.subtitle {
-			font-size: 28px;
-			font-weight: 400;
-			color: #6e6e73;
-		}
-
-		.section {
-			padding: 60px 0;
-			border-top: 1px solid #d2d2d7;
-		}
-
-		h2 {
-			font-size: 40px;
-			font-weight: 600;
-			margin-bottom: 24px;
-		}
-
-		p,
-		li {
-			font-size: 19px;
-			margin-bottom: 16px;
-		}
-
-		ul {
-			list-style: none;
-			padding-left: 0;
-		}
-
-		li:before {
-			content: "• ";
-			color: #0071e3;
-		}
-
-		a {
-			color: #0071e3;
-			text-decoration: none;
-		}
-
-		a:hover {
-			text-decoration: underline;
-		}
-
-		footer {
-			text-align: center;
-			padding: 80px 0 40px;
-			font-size: 15px;
-			color: #6e6e73;
-			border-top: 1px solid #d2d2d7;
-		}
-	</style>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-	<header>
+	<header class="header-left">
 		<div class="container">
 			<h1>Boldify</h1>
 			<p class="subtitle">Software Development & Mobile Applications</p>
@@ -104,21 +17,37 @@
 	</header>
 
 	<div class="container">
-		<div class="section">
+		<section class="section-compact">
+			<h2>Our Products</h2>
+			<div style="display: flex; align-items: center; gap: 20px;">
+				<a href="landing.html"
+					style="display: flex; flex-direction: column; align-items: center; text-decoration: none; color: inherit;">
+					<img src="app_logo.png" alt="LUMO Logo" class="app-icon"
+						style="width: 80px; height: 80px; margin-bottom: 8px;">
+					<span style="font-weight: 600; font-size: 18px;">LUMO</span>
+				</a>
+			</div>
+		</section>
+
+		<section class="section-compact">
+			<h2>Company Information</h2>
 			<p>
-				Tax ID (TIN): 20000569<br>
-				Registration number: 264.1493716<br>
+				DUNS: 933896711<br>
 				Date of registration: November 27, 2025<br>
 				Address: N. Tigranyan 27, Yerevan 0037, Armenia<br>
-				Email: hi@boldify.tech
+				Email: <a href="mailto:hi@boldify.tech">hi@boldify.tech</a>
 			</p>
-		</div>
+		</section>
 	</div>
 
-	<footer>
-		© 2025 Boldify – Individual Entrepreneur Podyakov Zakhar Maksimovich<br>
+	<footer class="container">
+		<div class="footer-links">
+			<a href="terms_of_service.html">Terms of Service</a>
+			<a href="privacy_policy.html">Privacy Policy</a>
+			<a href="return_policty.html">Refund Policy</a>
+		</div>
+		<p>&copy; 2026 Zakhar Maksim Podyakov, IE. All rights reserved.</p>
 	</footer>
-
 </body>
 
 </html>

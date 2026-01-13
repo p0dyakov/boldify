@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LUMO - Your AI Study Companion</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<img src="app_logo.png" alt="LUMO Logo" class="app-icon" onclick="location.href='index.html'">
+			<h1>LUMO</h1>
+			<p class="subtitle">Prepare for Finals and Midterms with AI</p>
+		</div>
+	</header>
+
+	<section class="section" style="padding-top: 20px;">
+		<div class="container">
+			<div style="text-align: center; max-width: 800px; margin: 0 auto;">
+				<h2 style="margin-bottom: 12px;">Master Your Exams with Ease</h2>
+				<p>LUMO is the ultimate AI study companion designed specifically for students in the US, Canada, and beyond. We
+					transform your learning experience by automating the tedious work of organizing study materials.</p>
+				<p>Simply upload your lecture presentations, photos of handwritten notes, or exam topics, and let LUMO generate
+					a personalized study course for you.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section-alt">
+		<div class="container">
+			<h2>Key Features</h2>
+			<div class="features-grid">
+				<div class="feature-item">
+					<h3>AI Course Generation</h3>
+					<p>Turn slides, PDFs, and textbook chapters into structured study units automatically.</p>
+				</div>
+				<div class="feature-item">
+					<h3>Smart Flashcards</h3>
+					<p>Leverage scientifically-proven active recall with AI-generated flashcards tailored to your curriculum.</p>
+				</div>
+				<div class="feature-item">
+					<h3>Notes to Knowledge</h3>
+					<p>Upload photos of your handwritten notes. LUMO's OCR and AI will transform them into interactive learning
+						modules.</p>
+				</div>
+				<div class="feature-item">
+					<h3>Spaced Repetition</h3>
+					<p>Our smart algorithm schedules your review sessions to ensure maximum long-term retention before the big
+						exam.</p>
+				</div>
+				<div class="feature-item">
+					<h3>Interactive Quizzes</h3>
+					<p>Test your knowledge with custom quizzes that adapt to your progress and focus on your weak spots.</p>
+				</div>
+				<div class="feature-item">
+					<h3>Exam-Ready Roadmaps</h3>
+					<p>Visualize the entire syllabus with interactive roadmaps that guide you through your preparation.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container">
+			<h2 style="text-align: center;">Simple Pricing</h2>
+			<div class="pricing-grid">
+				<div class="pricing-card">
+					<h3>Weekly</h3>
+					<div class="price">$5.99<span>/week</span></div>
+					<p>Perfect for intensive exam prep.</p>
+					<a href="javascript:void(0)" class="btn" onclick="showModal()">Get Started</a>
+				</div>
+				<div class="pricing-card featured">
+					<h3>Monthly</h3>
+					<div class="price">$17.99<span>/month</span></div>
+					<p>Best for consistent learners.</p>
+					<a href="javascript:void(0)" class="btn" onclick="showModal()">Get Started</a>
+				</div>
+				<div class="pricing-card">
+					<h3>Yearly</h3>
+					<div class="price">$79.99<span>/year</span></div>
+					<p>Save 60% annually.</p>
+					<a href="javascript:void(0)" class="btn" onclick="showModal()">Get Started</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="container">
+		<div class="footer-links">
+			<a href="terms_of_service.html">Terms of Service</a>
+			<a href="privacy_policy.html">Privacy Policy</a>
+			<a href="return_policty.html">Refund Policy</a>
+		</div>
+		<p>&copy; 2026 Zakhar Maksim Podyakov, IE. All rights reserved.</p>
+	</footer>
+
+	<div class="modal-overlay" id="modalOverlay">
+		<div class="modal">
+			<div class="modal-content">
+				<h4>LUMO</h4>
+				<p>Coming soon to the App Store!</p>
+			</div>
+			<button class="modal-btn" onclick="hideModal()">OK</button>
+		</div>
+	</div>
+
+	<script>
+		function showModal() {
+			document.getElementById('modalOverlay').style.display = 'flex';
+			document.body.style.overflow = 'hidden';
+		}
+		function hideModal() {
+			document.getElementById('modalOverlay').style.display = 'none';
+			document.body.style.overflow = 'auto';
+		}
+		window.onclick = function (event) {
+			const overlay = document.getElementById('modalOverlay');
+			if (event.target == overlay) {
+				hideModal();
+			}
+		}
+	</script>
+</body>
+
+</html>
