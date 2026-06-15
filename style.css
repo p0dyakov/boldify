@@ -117,21 +117,25 @@ a:hover {
 }
 
 footer {
-	padding: 40px 0 30px;
-	font-size: 14px;
+	margin-top: 28px;
+	padding: 16px 0 32px;
+	font-size: 13px;
 	color: var(--text-secondary);
 	border-top: 1px solid var(--border-color);
-	margin-top: 80px;
+}
+
+footer p {
+	margin: 0;
 }
 
 .section-alt + footer {
 	margin-top: 0;
 	border-top: none;
+	padding-top: 16px;
 }
 
 .footer-links {
-	margin-top: 24px;
-	margin-bottom: 24px;
+	margin: 0 0 16px;
 }
 
 .footer-links a {
