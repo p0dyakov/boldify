@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Clovet - Your AI Styling Companion</title>
+	<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<img src="app_logo.png" alt="Clovet Logo" class="app-icon" onclick="location.href='../index.html'">
+			<h1>Clovet</h1>
+			<p class="subtitle">Dress smarter with AI-powered outfit planning</p>
+		</div>
+	</header>
+
+	<section class="section" style="padding-top: 20px;">
+		<div class="container">
+			<div style="text-align: center; max-width: 800px; margin: 0 auto;">
+				<h2 style="margin-bottom: 12px;">Your closet, organized and styled</h2>
+				<p>Clovet turns photos of your clothes into a smart wardrobe you can style every day. Snap your pieces, build outfits on a visual canvas, and get AI suggestions tailored to your calendar, weather, and plans.</p>
+				<p>Whether you are getting dressed for right now or planning a trip, Clovet helps you wear more of what you own with less daily friction.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section-alt">
+		<div class="container">
+			<h2>Key Features</h2>
+			<div class="features-grid">
+				<div class="feature-item">
+					<h3>AI Wardrobe Builder</h3>
+					<p>Photograph your clothes and let AI extract cutouts, categories, colors, and metadata automatically.</p>
+				</div>
+				<div class="feature-item">
+					<h3>Outfit Canvas</h3>
+					<p>Drag and layer items on a visual canvas to compose looks, save outfits, and organize them into folders.</p>
+				</div>
+				<div class="feature-item">
+					<h3>For Now</h3>
+					<p>Get wear-now outfit recommendations based on your wardrobe, local weather, and upcoming calendar events.</p>
+				</div>
+				<div class="feature-item">
+					<h3>Smart Folders</h3>
+					<p>Describe your plans and let AI generate curated outfit capsules for trips, events, or weekly rotations.</p>
+				</div>
+				<div class="feature-item">
+					<h3>Refine with AI</h3>
+					<p>Ask for styling tweaks on any outfit and receive concrete add, replace, or remove suggestions from your wardrobe.</p>
+				</div>
+				<div class="feature-item">
+					<h3>Wear Tracking</h3>
+					<p>Log what you wear, see activity insights per item, and make better use of pieces you already own.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container">
+			<h2 style="text-align: center;">Premium Pricing</h2>
+			<p style="text-align: center; max-width: 640px; margin: 0 auto 8px;">Premium unlocks AI wardrobe processing, For Now suggestions, smart folders, and styling tools. Subscriptions are billed through the App Store or Google Play.</p>
+			<div class="pricing-grid pricing-grid-two">
+				<div class="pricing-card">
+					<h3>Monthly</h3>
+					<div class="price">$8.99<span>/month</span></div>
+					<p>Flexible access to all premium features.</p>
+					<a href="javascript:void(0)" class="btn" onclick="showModal()">Get Started</a>
+				</div>
+				<div class="pricing-card featured">
+					<h3>Yearly</h3>
+					<div class="price">$35.99<span>/year</span></div>
+					<p>Best value — save about 67% vs monthly. Includes a 3-day free trial for eligible new subscribers.</p>
+					<a href="javascript:void(0)" class="btn" onclick="showModal()">Get Started</a>
+				</div>
+			</div>
+			<p style="text-align: center; margin-top: 24px; font-size: 15px;">Premium includes up to 200 AI-processed wardrobe items per calendar month. Cancel anytime through your store subscription settings.</p>
+		</div>
+	</section>
+
+	<section class="section section-alt">
+		<div class="container">
+			<h2>Privacy &amp; Permissions</h2>
+			<div style="max-width: 720px;">
+				<p>Clovet may request optional access to your camera and photo library to add clothing, location for weather-aware suggestions, calendar for schedule-aware outfit planning, and notifications for outfit updates.</p>
+				<p>We do not sell your personal information. See our <a href="privacy_policy.html">Privacy Policy</a> for full details on data collection, AI processing, and your rights.</p>
+			</div>
+		</div>
+	</section>
+
+	<footer class="container">
+		<div class="footer-links">
+			<a href="terms_of_service.html">Terms of Service</a>
+			<a href="privacy_policy.html">Privacy Policy</a>
+			<a href="return_policy.html">Refund Policy</a>
+		</div>
+		<p>&copy; 2026 Zakhar Maksim Podyakov, IE. All rights reserved.</p>
+	</footer>
+
+	<div class="modal-overlay" id="modalOverlay">
+		<div class="modal">
+			<div class="modal-content">
+				<h4>Clovet</h4>
+				<p>Coming soon to the App Store and Google Play!</p>
+			</div>
+			<button class="modal-btn" onclick="hideModal()">OK</button>
+		</div>
+	</div>
+
+	<script>
+		function showModal() {
+			document.getElementById('modalOverlay').style.display = 'flex';
+			document.body.style.overflow = 'hidden';
+		}
+		function hideModal() {
+			document.getElementById('modalOverlay').style.display = 'none';
+			document.body.style.overflow = 'auto';
+		}
+		window.onclick = function (event) {
+			const overlay = document.getElementById('modalOverlay');
+			if (event.target == overlay) {
+				hideModal();
+			}
+		}
+	</script>
+</body>
+
+</html>
